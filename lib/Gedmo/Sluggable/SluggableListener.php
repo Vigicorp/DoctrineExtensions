@@ -280,6 +280,9 @@ class SluggableListener extends MappedEventSubscriber
             $options['useObjectClass'] = $config['useObjectClass'];
             // collect the slug from fields
             $slug = $meta->getReflectionProperty($slugField)->getValue($object);
+            if (!$options['update_not_null'] && null !== $slug) {
+                continue;
+            }
 
             // if slug should not be updated, skip it
             if (!$options['updatable'] && !$isInsert && (!isset($changeSet[$slugField]) || $slug === '__id__')) {

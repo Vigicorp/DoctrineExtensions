@@ -389,6 +389,7 @@ It will use this **string** property to store the generated slug.
 
 - **fields** - (array) _required_, must at least contain one field
 - **updatable** - (boolean) _optional_ default: **true**
+- **update_not_null** - (boolean) _optional_ default: **true**
 - **separator** - (string) _optional_ default: **-**
 - **unique** - (boolean) _optional_ default: **true**
 - **style** - (string) _optional_ default: **default** lowercase, can be **camel** also

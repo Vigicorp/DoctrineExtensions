@@ -19,6 +19,8 @@ final class Slug extends Annotation
     public $fields = array();
     /** @var boolean */
     public $updatable = true;
+    /** @var boolean */
+    public $update_not_null = true;
     /** @var string */
     public $style = 'default'; // or "camel"
     /** @var boolean */
