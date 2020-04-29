@@ -124,6 +124,9 @@ class Yaml extends File implements Driver
                 $config['slugs'][$field]['updatable'] = isset($slug['updatable']) ?
                     (bool) $slug['updatable'] : true;
 
+                $config['slugs'][$field]['update_not_null'] = isset($slug['update_not_null']) ?
+                    (bool) $slug['update_not_null'] : true;
+
                 $config['slugs'][$field]['unique'] = isset($slug['unique']) ?
                     (bool) $slug['unique'] : true;
 

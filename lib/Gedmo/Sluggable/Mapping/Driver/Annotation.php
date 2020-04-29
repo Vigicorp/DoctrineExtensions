@@ -136,6 +136,9 @@ class Annotation extends AbstractAnnotationDriver
             if (!is_bool($slug->updatable)) {
                 throw new InvalidMappingException("Slug annotation [updatable], type is not valid and must be 'boolean' in class - {$meta->name}");
             }
+            if (!is_bool($slug->update_not_null)) {
+                throw new InvalidMappingException("Slug annotation [update_not_null], type is not valid and must be 'boolean' in class - {$meta->name}");
+            }
             if (!is_bool($slug->unique)) {
                 throw new InvalidMappingException("Slug annotation [unique], type is not valid and must be 'boolean' in class - {$meta->name}");
             }
@@ -160,6 +163,7 @@ class Annotation extends AbstractAnnotationDriver
                 'style' => $slug->style,
                 'dateFormat' => $slug->dateFormat,
                 'updatable' => $slug->updatable,
+                'update_not_null' => $slug->update_not_null,
                 'unique' => $slug->unique,
                 'unique_base' => $slug->unique_base,
                 'separator' => $slug->separator,
