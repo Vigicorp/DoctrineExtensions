@@ -35,10 +35,10 @@
     ],
     "support": {
         "email": "gediminas.morkevicius@gmail.com",
-        "wiki": "https://github.com/Atlantic18/DoctrineExtensions/tree/master/doc"
+        "wiki": "https://github.com/Atlantic18/DoctrineExtensions/tree/main/doc"
     },
     "require": {
-        "php": ">=5.4",
+        "php": ">=5.4 <8",
         "behat/transliterator": "~1.2",
         "doctrine/common": "~2.4"
     },
